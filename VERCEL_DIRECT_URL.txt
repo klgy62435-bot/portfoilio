@@ -1,0 +1,36 @@
+🚀 رابط مباشر للاستخدام في Vercel
+
+📋 انسخ هذا الرابط والصقه في Vercel:
+
+https://github.com/ahmed-design-portfolio/mn-portfolio-2025.git
+
+🎯 الخطوات:
+1. انسخ الرابط أعلاه
+2. الصقه في خانة "Git Repository URL" في Vercel
+3. اضغط Continue
+4. اختر الإعدادات التالية:
+   - Framework Preset: Vite
+   - Build Command: npm run build
+   - Output Directory: dist
+   - Install Command: npm install
+
+✅ إعدادات Vercel الصحيحة:
+- Project Name: ahmed-design-portfolio
+- Framework: Vite
+- Root Directory: ./
+- Build Command: npm run build
+- Output Directory: dist
+- Install Command: npm install
+
+🎉 بعد النشر ستحصل على رابط مثل:
+https://ahmed-design-portfolio.vercel.app
+
+✨ المميزات المتاحة:
+- خلفية تفاعلية احترافية
+- تبديل الوضع الفاتح/الغامق
+- تبديل اللغة عربي/إنجليزي
+- تصميم متجاوب
+- صورة البروفايل
+- أنيميشن احترافي
+
+🚨 ملاحظة: إذا لم يعمل الرابط، استخدم الملفات ZIP الموجودة!
