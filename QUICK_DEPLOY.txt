@@ -1,0 +1,32 @@
+🚀 رفع البورتفوليو - خطوات سريعة
+
+✅ تم تجهيز Git Repository!
+
+📋 الخطوات:
+
+1️⃣ إنشاء Repository على GitHub:
+   - اذهب إلى: https://github.com/new
+   - اسم Repository: ahmed-design-portfolio
+   - اختر Public
+   - اضغط "Create repository"
+
+2️⃣ ربط المشروع (نسخ الأوامر من GitHub):
+   git remote add origin https://github.com/YOUR_USERNAME/ahmed-design-portfolio.git
+   git branch -M main
+   git push -u origin main
+
+3️⃣ ربط بـ Netlify:
+   - https://app.netlify.com/teams/manjgk6/projects
+   - "Add new site" → "Import from Git"
+   - اختر GitHub → اختر repository
+   - Build command: npm run build
+   - Publish directory: dist
+   - اضغط "Deploy site"
+
+🎉 النتيجة:
+   موقعك سيكون متاح على رابط مثل:
+   https://ahmed-design-portfolio.netlify.app
+
+💡 ملاحظة:
+   - استبدل YOUR_USERNAME باسم حسابك على GitHub
+   - تأكد من أن Repository مضبوط على Public
