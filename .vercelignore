@@ -1,0 +1,10 @@
+node_modules
+.git
+*.log
+*.zip
+*.ps1
+*.md
+*.txt
+.env*
+.vscode
+.idea
