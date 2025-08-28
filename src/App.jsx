@@ -59,7 +59,7 @@ const App = () => {
       },
       hero: {
         greeting: 'مرحباً، أنا',
-        name: 'محمد ناصر',
+        name: 'أحمد ديزاين',
         title: 'مصمم جرافيك ومطور تطبيقات',
         subtitle: 'مصمم لوجوهات | مونتير فيديو | مطور React Native | Sketchware Pro',
         viewProjects: 'عرض المشاريع',
