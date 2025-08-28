@@ -26,7 +26,7 @@ const App = () => {
       hero: {
         greeting: 'Hi, I\'m',
         name: 'Ahmed Design',
-        title: 'Graphic Designer & Mobile Developer',
+        title: 'Ai React Native Developer',
         subtitle: 'Logo Designer | Video Editor | React Native Developer | Sketchware Pro',
         viewProjects: 'View Projects',
         contactMe: 'Contact Me'
