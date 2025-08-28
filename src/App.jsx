@@ -341,15 +341,15 @@ const App = () => {
                 </p>
 
                 <div className="flex gap-4">
-                  <a href="#" className={`${
+                  <a href="https://www.behance.net/botroot1" target="_blank" rel="noopener noreferrer" className={`${
                     isDark ? 'text-cyan-400 hover:text-cyan-300' : 'text-blue-600 hover:text-blue-500'
                   } font-semibold hover:underline transition-colors`}>
-                    Portfolio
+                    Behance
                   </a>
-                  <a href="#" className={`${
+                  <a href="https://api.whatsapp.com/send/?phone=201099546607&text&app_absent=0" target="_blank" rel="noopener noreferrer" className={`${
                     isDark ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-400'
                   } font-semibold hover:underline transition-colors`}>
-                    Behance
+                    WhatsApp
                   </a>
                 </div>
               </div>
@@ -383,7 +383,7 @@ const App = () => {
                   } font-semibold hover:underline transition-colors`}>
                     YouTube
                   </a>
-                  <a href="#" className={`${
+                  <a href="https://www.instagram.com/ahmedmahmoud3978?utm_source=qr&igsh=MXE2eDBhNGttanBleg==" target="_blank" rel="noopener noreferrer" className={`${
                     isDark ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-400'
                   } font-semibold hover:underline transition-colors`}>
                     Instagram
@@ -521,15 +521,17 @@ const App = () => {
 
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              { name: 'LinkedIn', icon: '💼', color: 'blue' },
-              { name: 'GitHub', icon: '💻', color: 'gray' },
-              { name: 'Instagram', icon: '📸', color: 'pink' },
-              { name: 'Behance', icon: '🎨', color: 'purple' },
-              { name: 'WhatsApp', icon: '💬', color: 'green' }
+              { name: 'LinkedIn', icon: '💼', color: 'blue', url: '#' },
+              { name: 'GitHub', icon: '💻', color: 'gray', url: '#' },
+              { name: 'Instagram', icon: '📸', color: 'pink', url: 'https://www.instagram.com/ahmedmahmoud3978?utm_source=qr&igsh=MXE2eDBhNGttanBleg==' },
+              { name: 'Behance', icon: '🎨', color: 'purple', url: 'https://www.behance.net/botroot1' },
+              { name: 'WhatsApp', icon: '💬', color: 'green', url: 'https://api.whatsapp.com/send/?phone=201099546607&text&app_absent=0' }
             ].map((social) => (
               <a
                 key={social.name}
-                href="#"
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 ${
                   isDark
                     ? 'bg-gray-700 hover:bg-gray-600 text-white'
