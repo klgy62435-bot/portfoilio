@@ -1,6 +1,5 @@
 ﻿// src/components/Hero.jsx
 import React from "react";
-import heroImg from "../assets/hero.jpg"; // غير المسار حسب الصورة عندك
 
 const Hero = () => {
   return (
@@ -34,11 +33,17 @@ const Hero = () => {
 
       {/* الصورة */}
       <div className="flex-1 mt-10 md:mt-0 flex justify-center">
-        <img
-          src={heroImg}
-          alt="Hero"
-          className="w-80 md:w-[420px] rounded-2xl shadow-lg object-cover"
-        />
+        <div className="w-80 md:w-[420px] flex justify-center items-center">
+          <div className="relative">
+            <img
+              src="/ahmed.png"
+              alt="Ahmed Design - صورة شخصية"
+              className="w-80 h-80 md:w-[400px] md:h-[400px] rounded-full object-cover border-4 border-cyan-400 shadow-2xl shadow-cyan-400/20 hover:shadow-cyan-400/40 transition-all duration-300"
+            />
+            {/* تأثير الإضاءة */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-400/20 to-transparent pointer-events-none"></div>
+          </div>
+        </div>
       </div>
     </section>
   );

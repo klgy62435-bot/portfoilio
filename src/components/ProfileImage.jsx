@@ -1,33 +1,23 @@
 import React, { useState } from 'react';
-
 const ProfileImage = ({ isDark, className = "" }) => {
   const [imageError, setImageError] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  // List of possible image formats to try
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imageSources = [
-    "/IMG.png.png", // Direct path to the file you added
-    "/IMG.png",
-    "/IMG.jpg",
-    "/IMG.jpeg",
-    "/profile.jpg",
-    "/profile.png",
-    "/profileIMG_3719.HEIC",
-    "/profileIMG_3719.jpg",
-    "/profileIMG_3719.jpeg",
-    "/profileIMG_3719.png",
-    // Fallback to a placeholder
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+    "/IMG_3717.jpg",  // صورتك الشخصية
+    "/profile.jpg"    // نسخة احتياطية
   ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const handleImageError = () => {
+    console.log('❌ Failed to load:', imageSources[currentImageIndex]);
     if (currentImageIndex < imageSources.length - 1) {
       setCurrentImageIndex(currentImageIndex + 1);
-      setImageError(false);
+      console.log('🔄 Trying next image:', imageSources[currentImageIndex + 1]);
     } else {
       setImageError(true);
+      setImageLoaded(false);
+      console.log('❌ All images failed to load');
     }
   };
 
@@ -66,8 +56,9 @@ const ProfileImage = ({ isDark, className = "" }) => {
         className={`${imageLoaded ? 'block' : 'hidden'} relative w-40 h-40 rounded-full border-4 ${
           isDark ? 'border-cyan-400' : 'border-blue-600'
         } object-cover shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl`}
-        onError={handleImageError}
+        
         onLoad={handleImageLoad}
+        onError={handleImageError}
         loading="eager"
         style={{
           filter: isDark ? 'brightness(0.95) contrast(1.05)' : 'brightness(1.05) contrast(1.02)',
