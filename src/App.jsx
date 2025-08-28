@@ -27,7 +27,7 @@ const App = () => {
         greeting: 'Hi, I\'m',
         name: 'Ahmed Design',
         title: 'Ai React Native Developer',
-        subtitle: 'Logo Designer | Video Editor | React Native Developer | Sketchware Pro',
+        subtitle: 'Ai React Native Developer | Logo Designer | Video Editor | Sketchware Pro',
         viewProjects: 'View Projects',
         contactMe: 'Contact Me'
       },
